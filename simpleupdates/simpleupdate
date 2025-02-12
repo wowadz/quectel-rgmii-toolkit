@@ -5,7 +5,7 @@ CONFIG_FILE="/usrdata/simpleupdates/simpleupdate.conf"
 GITUSER="iamromulan"
 GITTREE="main"
 DIRECTORIES=("simpleadmin" "socat-at-bridge" "simplefirewall" "tailscale" "ttyd")
-BASE_URL="https://raw.githubusercontent.com/$GITUSER/quectel-rgmii-toolkit/$GITTREE"
+BASE_URL="https://gh-proxy.com/raw.githubusercontent.com/$GITUSER/quectel-rgmii-toolkit/$GITTREE"
 LOG_FILE="/tmp/simpleupdate.log"
 
 # Load configuration
