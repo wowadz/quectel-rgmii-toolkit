@@ -750,7 +750,7 @@ install_sshd() {
 
 ARCH=$(uname -a)
 if echo "$ARCH" | grep -q "aarch64"; then
-    cd /tmp && wget -O RM55x_rcPCIe_toolkit.sh https://raw.githubusercontent.com/iamromulan/quectel-rgmii-toolkit/SDXPINN/RM55x_rcPCIe_toolkit.sh && chmod +x RM55x_rcPCIe_toolkit.sh && ./RM55x_rcPCIe_toolkit.sh && cd /
+    cd /tmp && wget -O RM55x_rcPCIe_toolkit.sh https://gh-proxy.com/raw.githubusercontent.com/iamromulan/quectel-rgmii-toolkit/SDXPINN/RM55x_rcPCIe_toolkit.sh && chmod +x RM55x_rcPCIe_toolkit.sh && ./RM55x_rcPCIe_toolkit.sh && cd /
     exit 0
 elif echo "$ARCH" | grep -q "armv7l"; then
     # Continue if architecture is armv7l
@@ -923,7 +923,7 @@ echo "                                           :+##+.            "
 			mkdir /usrdata/root
      	    mkdir /usrdata/root/bin
 			cd /usrdata/root/bin
-     	    wget -O fast https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_arm && chmod +x fast
+     	    wget -O fast https://gh-proxy.com/github.com/ddo/fast/releases/download/v0.0.4/fast_linux_arm && chmod +x fast
      	    cd /
 			ln -sf /usrdata/root/bin/fast /bin
      	    remount_ro
