@@ -518,9 +518,9 @@ configure_tailscale() {
        	echo "Tailscale Web UI Stopped and Disabled"
      	remount_ro
 	;;
-	3) $TAILSCALE_DIR/tailscale up --accept-dns=false --reset;;
-    4) $TAILSCALE_DIR/tailscale up --ssh --accept-dns=false --reset;;
-	5) $TAILSCALE_DIR/tailscale up --accept-dns=false --reset;;
+	3) $TAILSCALE_DIR/tailscale up --accept-routes --accept-dns=false --reset;;
+    4) $TAILSCALE_DIR/tailscale up --accept-routes --ssh --accept-dns=false --reset;;
+	5) $TAILSCALE_DIR/tailscale up --accept-routes --accept-dns=false --reset;;
      	6) $TAILSCALE_DIR/tailscale down;;
         7) $TAILSCALE_DIR/tailscale logout;;
         8) break;;
